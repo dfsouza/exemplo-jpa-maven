@@ -26,8 +26,8 @@ public class Programa {
 //		System.out.println(p);
 		
 		em.getTransaction().begin();
-		Pessoa p = em.find(Pessoa.class, 2);
-		em.remove(p);
+		Pessoa p = em.find(Pessoa.class, 3);
+		p.setEmail("daniel@gmail.com");
 		em.getTransaction().commit();
 		
 		System.out.println("Pronto!");
